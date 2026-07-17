@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+    <style>
+        
+img{
+ margin:10px;
+width: 150px;
+  height: 150px;
+     cursor: pointer;
+}
+
+    </style>
+     <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <h1>Welcome</h1>
+<button onclick="alert('welcome the web')">Click Here</button>
+    <hr>
+    <div style="display: flex;">
+        <img src="./assed/download (1).jpg" class="img1">
+         <img src="./assed/download.jpg" class="img1">
+      <img src="./assed/PS5 BLACK EDITION ( not real ).jpg" class="img1">
+        
+    </div>
+    <div id="shownum">0</div>
+<script>
+const imgs = document.querySelectorAll('.img1');
+    var counter = 0 ;
+   var shownum =document.querySelector("#shownum")
+
+      imgs.forEach(function(item){
+      
+        item.addEventListener("click" , function(){
+
+        counter++
+      alert(counter)
+ 
+        })
+
+      }) 
+
+</script>
+
+    
+</body>
+</html>
 
