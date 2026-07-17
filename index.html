@@ -26,16 +26,23 @@ width: 150px;
       <img src="./assed/PS5 BLACK EDITION ( not real ).jpg" class="img1">
         
     </div>
+    <div id="shownum"></div>
 <script>
 const imgs = document.querySelectorAll('.img1');
-    var num = 0 ;
-    function Odometer(){
-        num++;
-        console.log("count" + num);
-    }
-    function alertScore() {
-            alert(` result (Score) هي: ${num}`);
-        }
+    var counter = 0 ;
+   var shownum =document.querySelector("#shownum")
+
+      imgs.forEach(function(item){
+      
+        item.addEventListener("click" , function(){
+
+        counter++
+        shownum.innerHTML= counter
+
+        })
+
+      }) 
+
 </script>
 
     
